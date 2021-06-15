@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EBBFF1ED0A1F1B99F3A7B9 /* Pods_EmojiStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1798AF3D47F5C424D0AE0395 /* Pods_EmojiStory.framework */; };
 		B2DA0C292677642000D86D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C282677642000D86D83 /* AppDelegate.swift */; };
 		B2DA0C2B2677642000D86D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C2A2677642000D86D83 /* SceneDelegate.swift */; };
 		B2DA0C2D2677642000D86D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C2C2677642000D86D83 /* ViewController.swift */; };
 		B2DA0C302677642000D86D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C2E2677642000D86D83 /* Main.storyboard */; };
 		B2DA0C322677642300D86D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C312677642300D86D83 /* Assets.xcassets */; };
 		B2DA0C352677642300D86D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C332677642300D86D83 /* LaunchScreen.storyboard */; };
+		B2DA0C3F26777F7200D86D83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C3E26777F7200D86D83 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1798AF3D47F5C424D0AE0395 /* Pods_EmojiStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCBB38081A7962F7313053E /* Pods-EmojiStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiStory.release.xcconfig"; path = "Target Support Files/Pods-EmojiStory/Pods-EmojiStory.release.xcconfig"; sourceTree = "<group>"; };
+		97A60032AF3CEDE67ED6DC00 /* Pods-EmojiStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiStory.debug.xcconfig"; path = "Target Support Files/Pods-EmojiStory/Pods-EmojiStory.debug.xcconfig"; sourceTree = "<group>"; };
 		B2DA0C252677642000D86D83 /* EmojiStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DA0C282677642000D86D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2DA0C2A2677642000D86D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		B2DA0C312677642300D86D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2DA0C342677642300D86D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2DA0C362677642300D86D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2DA0C3E26777F7200D86D83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EBBFF1ED0A1F1B99F3A7B9 /* Pods_EmojiStory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AA631E72E37E6EED105C891 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97A60032AF3CEDE67ED6DC00 /* Pods-EmojiStory.debug.xcconfig */,
+				3DCBB38081A7962F7313053E /* Pods-EmojiStory.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B2DA0C1C2677642000D86D83 = {
 			isa = PBXGroup;
 			children = (
 				B2DA0C272677642000D86D83 /* EmojiStory */,
 				B2DA0C262677642000D86D83 /* Products */,
+				8AA631E72E37E6EED105C891 /* Pods */,
+				B7DB3CC9ED6739F24868067B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				B2DA0C312677642300D86D83 /* Assets.xcassets */,
 				B2DA0C332677642300D86D83 /* LaunchScreen.storyboard */,
 				B2DA0C362677642300D86D83 /* Info.plist */,
+				B2DA0C3E26777F7200D86D83 /* GoogleService-Info.plist */,
 			);
 			path = EmojiStory;
+			sourceTree = "<group>";
+		};
+		B7DB3CC9ED6739F24868067B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1798AF3D47F5C424D0AE0395 /* Pods_EmojiStory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2DA0C392677642300D86D83 /* Build configuration list for PBXNativeTarget "EmojiStory" */;
 			buildPhases = (
+				9356A5BFA436987B841E4B8C /* [CP] Check Pods Manifest.lock */,
 				B2DA0C212677642000D86D83 /* Sources */,
 				B2DA0C222677642000D86D83 /* Frameworks */,
 				B2DA0C232677642000D86D83 /* Resources */,
+				E07BA809F3C8202AB4CEDCD1 /* [CP] Embed Pods Frameworks */,
+				EFEAB6721D51CB07AB0EED09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2DA0C352677642300D86D83 /* LaunchScreen.storyboard in Resources */,
+				B2DA0C3F26777F7200D86D83 /* GoogleService-Info.plist in Resources */,
 				B2DA0C322677642300D86D83 /* Assets.xcassets in Resources */,
 				B2DA0C302677642000D86D83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9356A5BFA436987B841E4B8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmojiStory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07BA809F3C8202AB4CEDCD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEAB6721D51CB07AB0EED09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmojiStory/Pods-EmojiStory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2DA0C212677642000D86D83 /* Sources */ = {
@@ -283,6 +373,7 @@
 		};
 		B2DA0C3A2677642300D86D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A60032AF3CEDE67ED6DC00 /* Pods-EmojiStory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +394,7 @@
 		};
 		B2DA0C3B2677642300D86D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DCBB38081A7962F7313053E /* Pods-EmojiStory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
