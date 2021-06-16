@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		21EBBFF1ED0A1F1B99F3A7B9 /* Pods_EmojiStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1798AF3D47F5C424D0AE0395 /* Pods_EmojiStory.framework */; };
+		B277A43F2678901D00B8BE57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A43E2678901C00B8BE57 /* LoginViewController.swift */; };
+		B277A4462679121400B8BE57 /* StatusDisplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A4452679121400B8BE57 /* StatusDisplayVC.swift */; };
+		B277A44A267A3A9900B8BE57 /* StatusViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277A449267A3A9900B8BE57 /* StatusViewCell.swift */; };
 		B2DA0C292677642000D86D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C282677642000D86D83 /* AppDelegate.swift */; };
 		B2DA0C2B2677642000D86D83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C2A2677642000D86D83 /* SceneDelegate.swift */; };
-		B2DA0C2D2677642000D86D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA0C2C2677642000D86D83 /* ViewController.swift */; };
 		B2DA0C302677642000D86D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C2E2677642000D86D83 /* Main.storyboard */; };
 		B2DA0C322677642300D86D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C312677642300D86D83 /* Assets.xcassets */; };
 		B2DA0C352677642300D86D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2DA0C332677642300D86D83 /* LaunchScreen.storyboard */; };
@@ -21,10 +23,12 @@
 		1798AF3D47F5C424D0AE0395 /* Pods_EmojiStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmojiStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCBB38081A7962F7313053E /* Pods-EmojiStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiStory.release.xcconfig"; path = "Target Support Files/Pods-EmojiStory/Pods-EmojiStory.release.xcconfig"; sourceTree = "<group>"; };
 		97A60032AF3CEDE67ED6DC00 /* Pods-EmojiStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmojiStory.debug.xcconfig"; path = "Target Support Files/Pods-EmojiStory/Pods-EmojiStory.debug.xcconfig"; sourceTree = "<group>"; };
+		B277A43E2678901C00B8BE57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B277A4452679121400B8BE57 /* StatusDisplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusDisplayVC.swift; sourceTree = "<group>"; };
+		B277A449267A3A9900B8BE57 /* StatusViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewCell.swift; sourceTree = "<group>"; };
 		B2DA0C252677642000D86D83 /* EmojiStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2DA0C282677642000D86D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2DA0C2A2677642000D86D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2DA0C2C2677642000D86D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2DA0C2F2677642000D86D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2DA0C312677642300D86D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2DA0C342677642300D86D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,12 +80,14 @@
 			children = (
 				B2DA0C282677642000D86D83 /* AppDelegate.swift */,
 				B2DA0C2A2677642000D86D83 /* SceneDelegate.swift */,
-				B2DA0C2C2677642000D86D83 /* ViewController.swift */,
+				B277A43E2678901C00B8BE57 /* LoginViewController.swift */,
+				B277A4452679121400B8BE57 /* StatusDisplayVC.swift */,
 				B2DA0C2E2677642000D86D83 /* Main.storyboard */,
 				B2DA0C312677642300D86D83 /* Assets.xcassets */,
 				B2DA0C332677642300D86D83 /* LaunchScreen.storyboard */,
 				B2DA0C362677642300D86D83 /* Info.plist */,
 				B2DA0C3E26777F7200D86D83 /* GoogleService-Info.plist */,
+				B277A449267A3A9900B8BE57 /* StatusViewCell.swift */,
 			);
 			path = EmojiStory;
 			sourceTree = "<group>";
@@ -227,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2DA0C2D2677642000D86D83 /* ViewController.swift in Sources */,
+				B277A43F2678901D00B8BE57 /* LoginViewController.swift in Sources */,
 				B2DA0C292677642000D86D83 /* AppDelegate.swift in Sources */,
 				B2DA0C2B2677642000D86D83 /* SceneDelegate.swift in Sources */,
+				B277A4462679121400B8BE57 /* StatusDisplayVC.swift in Sources */,
+				B277A44A267A3A9900B8BE57 /* StatusViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -361,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
